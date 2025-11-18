@@ -12,7 +12,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                url: 'https://github.com/XIvin95/DEVOPS-CI-CD-Process-Flow-Visualizer.git'
+                url: 'https://github.com/Xlvin95/DEVOPS-CI-CD-Process-Flow-Visualizer.git'
             }
         }
 
@@ -58,3 +58,4 @@ pipeline {
         }
     }
 }
+
