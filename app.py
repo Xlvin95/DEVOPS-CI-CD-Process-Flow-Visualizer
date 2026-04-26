@@ -1,14 +1,14 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 import sys # For printing to stderr for debug clarity
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='.')
 CORS(app)  # Enable CORS for all routes
 
 # Root route for basic health check
 @app.route('/')
-def home():
-    return "✅ CPU Scheduling Simulator Backend is running!"
+def serve_frontend():
+    return send_from_directory('.', 'index1.html')
 
 # Helper function to calculate metrics
 # This function now expects 'original_processes' to be the processes list in the order
