@@ -32,8 +32,7 @@ pipeline {
 
         stage('SonarQube Analysis') {
             steps {
-                echo "Running SonarQube Scan"
-                sh "echo SonarQube scanning (dummy for demo)"
+                echo "Skipping SonarQube for now"
             }
         }
 
