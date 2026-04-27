@@ -6,7 +6,7 @@ CORS(app)
 
 @app.route('/')
 def home():
-    return send_from_directory('.', 'index.html')
+    return send_from_directory('.', 'index1.html')
 
 @app.route('/simulate', methods=['POST'])
 def simulate():
